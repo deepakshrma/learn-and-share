@@ -17,7 +17,7 @@ const styles = {
     textStyle: {
         fontSize: 20
     }
-}
+};
 
 export default Header = (props) => {
     const { textStyle, viewStyle } = styles;
