@@ -1,0 +1,19 @@
+{
+  "name": "learn-react-native",
+  "version": "1.0.0",
+  "description": "",
+  "main": "react-native-port-update.js",
+  "dependencies": {
+    "json-server": "^0.12.1",
+    "replace-in-file": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "update-port": "node react-native-port-update.js",
+    "server": "json-server --watch db.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
