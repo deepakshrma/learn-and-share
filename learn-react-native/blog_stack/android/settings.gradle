@@ -1,0 +1,3 @@
+rootProject.name = 'blog_stack'
+
+include ':app'

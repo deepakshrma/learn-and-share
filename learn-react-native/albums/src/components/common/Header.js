@@ -18,12 +18,12 @@ const styles = {
         fontSize: 20
     }
 };
-
-export default Header = (props) => {
+const Header = (props) => {
     const { textStyle, viewStyle } = styles;
 return (
     <View style={viewStyle}>
         <Text style={textStyle} >{props.headerText}</Text>
     </View>
 );
-}
+};
+export { Header };
