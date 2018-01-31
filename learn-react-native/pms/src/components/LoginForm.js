@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import { connect } from 'react-redux';
 import { emailChanged, passwordChanged, loginUser } from '../actions';
-import { Card, CardSection, Input, Button } from './common';
+import { Card, CardSection, Input, Button, Spinner } from './common';
 
 class LoginForm extends Component {
     onEmailChange(text) {
@@ -33,18 +33,26 @@ class LoginForm extends Component {
             );
         }
     }
+    renderContent() {
+        if(this.props.loading){
+            return <Spinner size="large"/>
+        }
+        return (
+            <Button onPress={ this.onLoginUser.bind(this) }>login</Button>
+        );
+    }
     render() {
         return (
             <Card>
                 <CardSection>
-                    <Input label="User a name"
+                    <Input label="Email"
                         placeholder="John" 
                         onChangeText = {  this.onEmailChange.bind(this) }
                         value = { this.props.email }
                         />
                 </CardSection>
                 <CardSection>
-                    <Input label="email id"
+                    <Input label="password"
                         secureTextEntry
                         placeholder="deepak@dbs.com" 
                         onChangeText = {  this.onPasswordChange.bind(this) }
@@ -53,7 +61,7 @@ class LoginForm extends Component {
                 </CardSection>
                 { this.renderError() }
                 <CardSection>
-                    <Button onPress={ this.onLoginUser.bind(this) }>login</Button>
+                    { this.renderContent() }
                 </CardSection>
             </Card>
         );
@@ -70,7 +78,8 @@ const mapStateToProps = state => {
     return {
         email: state.auth.email,
         password: state.auth.password,
-        error: state.auth.error
+        error: state.auth.error,
+        loading: state.auth.loading
     }
 }
 export default connect(mapStateToProps, { emailChanged, passwordChanged, loginUser })(LoginForm);

@@ -21,6 +21,8 @@ import firebase from "firebase";
 import reducers from './reducers';
 
 import LoginForm from './components/LoginForm';
+import Router from './Router';
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
     'Cmd+D or shake for dev menu',
@@ -40,22 +42,12 @@ export default class App extends Component<{}> {
       messagingSenderId: "415146363862"
     };
     firebase.initializeApp(config);
-    // firebase.auth().onAuthStateChanged((user) => {
-    //     if(user){
-    //         this.setState({ loggedIn: true });
-    //     }else {
-    //         this.setState({ loggedIn: false });
-    //     }
-    // });
   }
   render() {
     const store = createStore(reducers, {}, applyMiddleware(Reduxthunk));
     return (
       <Provider store={ store }>
-        <View>
-          <Text>Test</Text>
-          <LoginForm></LoginForm>
-        </View>
+        <Router/>
       </Provider>
     );
   }
