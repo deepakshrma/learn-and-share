@@ -1,4 +1,5 @@
 {
   "name": "pms",
-  "displayName": "pms"
+  "displayName": "pms",
+  "expo": { "sdkVersion": "25.0.0" } 
 }

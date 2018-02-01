@@ -1,5 +1,5 @@
 import firebase from 'firebase';
-import { EMPLOYEE_UPDATE, EMPLOYEE_CREATE } from "./types";
+import { EMPLOYEE_UPDATE, EMPLOYEE_CREATE, EMPLOYEE_FETCH_SUCCESS } from "./types";
 import { Actions } from 'react-native-router-flux';
 import { Alert } from 'react-native';
 import db from '../db';
@@ -28,12 +28,35 @@ export const employeeUpdate = ({ prop, value }) => {
 export const employeeCreate = ({ name, phone, shift }) => {
     const { currentUser } = firebase.auth();
     return (dispatch) => {
-        pushEmployee(currentUser ? currentUser.uid : + new Date(), { name, phone, shift })
-            .then((emp) => {
+        // pushEmployee(currentUser ? currentUser.uid : + new Date(), { name, phone, shift })
+        //     .then((emp) => {
+        //         dispatch({ type: EMPLOYEE_CREATE });
+        //         Actions.main({ type: 'reset' });
+        //     });
+        firebase.database().ref(`/users/${currentUser.uid}/employees`)
+            .push({ name, phone, shift })
+            .then(() => {
                 dispatch({ type: EMPLOYEE_CREATE });
                 Actions.main({ type: 'reset' });
+            })
+            .catch( e => {
+                Alert.alert(
+                'Error!!!! ',
+                JSON.stringify(e),
+                [{text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'}],
+                { cancelable: false }
+              )
             });
     };
+}
+export const employeeFetch = () => {
+    const { currentUser } = firebase.auth();
+    return (dispatch) => {
+        firebase.database().ref(`/users/${currentUser.uid}/employees`)
+            .on('value', snapshot => {
+                dispatch({ type: EMPLOYEE_FETCH_SUCCESS, payload: snapshot.val() })
+            })
+    }
 }
 //
             // Alert.alert(
