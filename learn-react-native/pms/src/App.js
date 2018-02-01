@@ -34,12 +34,12 @@ export default class App extends Component<{}> {
   componentWillMount() {
     // Initialize Firebase
     var config = {
-      apiKey: "AIzaSyAxUaengjxB0FUtx0bnNjx7B177ynVDiLg",
-      authDomain: "authentication-efe52.firebaseapp.com",
-      databaseURL: "https://authentication-efe52.firebaseio.com",
-      projectId: "authentication-efe52",
-      storageBucket: "authentication-efe52.appspot.com",
-      messagingSenderId: "415146363862"
+      apiKey: "AIzaSyBJ9u_2Ipp27A4Vtepibi0Sr6D2dvJ0k1Y",
+      authDomain: "machineking-79690.firebaseapp.com",
+      databaseURL: "https://machineking-79690.firebaseio.com",
+      projectId: "machineking-79690",
+      storageBucket: "machineking-79690.appspot.com",
+      messagingSenderId: "191780701556"
     };
     firebase.initializeApp(config);
   }
