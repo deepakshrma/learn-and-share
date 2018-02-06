@@ -10,6 +10,7 @@ import {
 import { connect } from 'react-redux';
 import { emailChanged, passwordChanged, loginUser } from '../actions';
 import { Card, CardSection, Input, Button, Spinner } from './common';
+import TestComponent from 'rn-core';
 
 class LoginForm extends Component {
     onEmailChange(text) {
@@ -45,6 +46,7 @@ class LoginForm extends Component {
         return (
             <Card>
                 <CardSection>
+                    <TestComponent/>
                     <Input label="Email"
                         placeholder="John" 
                         onChangeText = {  this.onEmailChange.bind(this) }

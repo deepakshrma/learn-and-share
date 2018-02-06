@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import {
     Text,
     View,
-    TouchableWithoutFeedback
+    TouchableWithoutFeedback,
+    Alert
 } from 'react-native';
 import { CardSection } from './common';
 import { Actions } from 'react-native-router-flux';
 class ListItem extends Component {
     onRowPress() {
+        Alert.alert('test:' + JSON.stringify(this.props.employee))
         Actions.employeeEdit({ employee: this.props.employee });
     }
     render() {

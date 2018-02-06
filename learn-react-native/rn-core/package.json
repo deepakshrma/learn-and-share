@@ -1,0 +1,26 @@
+{
+  "name": "rn-core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf node_modules/react-native",
+    "update": "npm i react react-native",
+    "publish:local": "npm run clean && npm link",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": ">= 15.x",
+    "react-native": ">= 0.47.x"
+  },
+  "devDependencies": {
+    "babel-preset-react-native": "^4.0.0"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-native": "^0.53.0"
+  }
+}
