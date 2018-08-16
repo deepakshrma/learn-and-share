@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ThemeDemo</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="theme_names">
+        <item>Select Theme</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Singapore</item>
+    </string-array>
+</resources>

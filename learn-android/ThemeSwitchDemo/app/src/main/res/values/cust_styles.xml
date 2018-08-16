@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">?themePrimeColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="themePrimeColor">?themePrimeColor</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+    <style name="AppTheme.NoActionBar.India">
+        <item name="themePrimeColor">@color/india_prime_color</item>
+    </style>
+    <style name="AppTheme.NoActionBar.Singapore">
+        <item name="themePrimeColor">@color/singapore_prime_color</item>
+    </style>
+    <style name="AppTheme.NoActionBar.Indo">
+        <item name="themePrimeColor">@color/indo_prime_color</item>
+    </style>
+    <style name="DButton">
+        <item name="android:background">?themePrimeColor</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="DText">
+        <item name="android:textColor">?themePrimeColor</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
