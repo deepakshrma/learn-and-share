@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '../components/Button';
 import renderer from 'react-test-renderer';
 
-test('Link changes the class when hovered', () => {
+test('Button changes the class when hovered', () => {
   const component = renderer.create(
     <Button text="Hover here">Facebook</Button>,
   );
