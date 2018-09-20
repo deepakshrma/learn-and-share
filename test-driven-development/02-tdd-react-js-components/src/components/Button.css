@@ -1,0 +1,10 @@
+.hovered {
+  background: rgb(205, 40, 51);
+  color: white;
+  font-size: 1.2em;
+}
+
+.normal {
+    background: rgb(45, 45, 140);
+    color: white;
+}
