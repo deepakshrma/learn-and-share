@@ -1,10 +1,18 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Button from './components/Button';
-import Currency from './components/Currency';
+import React, { Component } from "react";
+import axios from 'axios';
+import logo from "./logo.svg";
+import "./App.css";
+import Button from "./components/Button";
+import Currency from "./components/Currency";
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      rate: "0"
+    };
+    this.fetchData = this.fetchData.bind(this);
+  }
   render() {
     return (
       <div className="App">
@@ -15,17 +23,19 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Button text="Click Here"></Button>
-        <Button></Button>
-        <Button text="fetch data" onClick={
-          this.fetchData
-        }></Button>
-      <Currency rate="0"></Currency>
-      </div >
+        <Button text="Click Here" />
+        <Button />
+        <Button text="fetch data" onClick={this.fetchData} />
+        <Currency rate={this.state.rate} />
+      </div>
     );
   }
-  fetchData() {
-    console.log("test")
+  async fetchData() {
+    console.log("get data");
+    const result = await axios.get(
+      "https://api.coindesk.com/v1/bpi/currentprice.json"
+    );
+    this.setState({ rate: result.data.bpi.USD.rate_float });
   }
 }
 
