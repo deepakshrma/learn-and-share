@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Capsule.Accent">
+        <item name="android:layout_height">@dimen/ovalButtonHeight</item>
+        <item name="android:padding">@dimen/xx_small_padding</item>
+        <item name="android:background">@drawable/capsule_accent_outline_background</item>
+        <item name="android:textColor">?attr/colorAccent</item>
+    </style>
+
+    <style name="Capsule.Accent.India" />
+
+    <style name="Capsule.Accent.Singapore" />
+
+    <style name="DBSEditText" parent="DBSTitleSingle.Primary">
+        <item name="android:textCursorDrawable">@drawable/custom_cursor</item>
+        <item name="android:layout_marginRight">-4dp</item>
+    </style>
+
+    <style name="DBSEditText.India" />
+
+    <style name="DBSEditText.Singapore" />
+</resources>

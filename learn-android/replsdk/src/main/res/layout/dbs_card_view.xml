@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/view_carousel_content" />
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/card_view_img"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dp"-->
+    <!--android:src="@drawable/placeholder" />-->
+
+    <!--<com.dbs.ui.components.DBSTextView-->
+    <!--android:id="@+id/card_view_title"-->
+    <!--style="@style/DBSHeader.H4.Left"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingStart="8dp"-->
+    <!--android:paddingEnd="8dp"-->
+    <!--tools:text="title here" />-->
+
+    <!--<com.dbs.ui.components.DBSTextView-->
+    <!--android:id="@+id/card_view_desc"-->
+    <!--style="@style/DBSLabelTitle"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/x_small_margin"-->
+    <!--android:layout_marginBottom="@dimen/x_small_margin"-->
+    <!--android:paddingStart="8dp"-->
+    <!--android:paddingEnd="8dp"-->
+    <!--tools:text="desc here" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/extra_content_div"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="?dbs_themeAppBackground"-->
+    <!--android:visibility="gone" />-->
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/extra_content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:visibility="gone"></FrameLayout>-->
+    <!--</LinearLayout>-->
+</merge>

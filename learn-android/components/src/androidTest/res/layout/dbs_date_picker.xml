@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.dbs.ui.components.DBSDatePicker
+        android:id="@+id/datePickerOne"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        custom:dbs_font="@font/open_sans"
+        android:hint="Date of Birth"
+        custom:dbs_dateIncludeToday="true"
+        custom:dbs_dateInitialDate="01/01/2010"
+        custom:dbs_dateMaxDate="01/01/2030"
+        custom:dbs_dateMinDate="01/01/2000"
+        android:src="@android:drawable/ic_menu_my_calendar"
+        android:textColor="@color/in_ascent_light"
+        android:textSize="22sp" />
+
+    <com.dbs.ui.components.DBSDatePicker
+        android:id="@+id/datePickerTwo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        custom:dbs_font="AvenirNextLTPro-Medium.ttf"
+        custom:dbs_dateFormat="MM/dd/yyyy"
+        android:hint="Date of Birth"
+        android:src="@android:drawable/ic_menu_my_calendar" />
+
+    <com.dbs.ui.components.DBSDatePicker
+        android:id="@+id/datePickerThree"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        custom:dbs_font="@font/open_sans"
+        android:hint="Date of Birth"
+        custom:dbs_dateIncludeToday="true"
+        custom:dbs_dateInitialDate="DD/01/2010"
+        custom:dbs_dateMaxDate="DD/01/2030"
+        custom:dbs_dateMinDate="DD/01/2000"
+        android:src="@android:drawable/ic_menu_my_calendar"
+        android:textColor="@color/in_ascent_light"
+        android:textSize="22sp" />
+
+</LinearLayout>

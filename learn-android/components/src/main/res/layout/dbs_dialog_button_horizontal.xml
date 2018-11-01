@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/dialogNegativeButton"
+        style="@style/DBSDialog.DBSButton.Horizontal"
+        android:layout_marginEnd="@dimen/small_margin"
+        app:backgroundTint="@color/dbs_dialog_cancel" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/dialogPositiveButton"
+        style="@style/DBSDialog.DBSButton.Horizontal" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?dbs_themeDividerColor"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="1"
+    android:layout_height="wrap_content"
+    >
+    <View
+        android:id="@+id/progressbar"
+        android:background="?dbs_themePrimaryColorHighlight"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/xx_small_margin"
+        />
+</LinearLayout>

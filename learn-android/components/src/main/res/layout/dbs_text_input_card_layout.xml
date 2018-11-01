@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dbs_corner_radius_small"
+        app:cardElevation="1dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/text_input_layout_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?dbs_themePrimaryTextColorInverse"
+                android:padding="@dimen/large_padding">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/DBSTextInputCardHint">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/textInputEditText"
+                        style="@style/DBSTitleSingle.Primary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="10dp"
+                        android:paddingTop="@dimen/small_padding" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/errorTextSeparatorLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/text_input_layout_holder"
+                android:background="?dbs_themeFailColor" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/errorTextView"
+        style="@style/DBSTextBase.ErrorContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_input_layout"
+        android:layout_marginTop="@dimen/small_margin"
+        android:paddingEnd="@dimen/large_padding"
+        android:paddingStart="@dimen/large_padding" />
+</RelativeLayout>

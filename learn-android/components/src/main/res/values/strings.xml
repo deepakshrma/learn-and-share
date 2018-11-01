@@ -1,0 +1,61 @@
+<resources>
+    <string name="may_i_help_you">May i help you?</string>
+    <string name="prev">Prev</string>
+    <string name="next">Next</string>
+    <string name="menu_item">MenuItem</string>
+    <string name="date_with_today_prefix">Today, %1$s</string>
+    <string name="pin">\u2022</string>
+
+    <string name="title_grant_camera_permission">Grant Camera Permission</string>
+    <string name="description_grant_camera_permission">This app needs camera permission to scan QR code</string>
+    <string name="allow">ALLOW</string>
+    <string name="deny">DENY</string>
+    <string name="select_fund_source">Select fund source</string>
+
+    <string name="feedback_overall_experience_question">How would you rate your overall experience today?</string>
+    <string name="what_can_be_improved">What can be improved?</string>
+    <string name="feedback_hint">Feedback (optional)</string>
+    <string name="submit">Submit</string>
+    <string name="rating_1_comment">Poor</string>
+    <string name="rating_2_comment">Fair</string>
+    <string name="rating_3_comment">Good</string>
+    <string name="rating_4_comment">Very Good</string>
+    <string name="rating_5_comment">Excellent</string>
+    <string name="improvement_area_1">Look and feel</string>
+    <string name="improvement_area_2">Ease of finding</string>
+    <string name="improvement_area_3">Ease of use</string>
+    <string name="improvement_area_4">Technical issues</string>
+    <string name="improvement_area_5">Range of services</string>
+    <string name="improvement_area_6">Others</string>
+    <string name="tell_me_more">TELL ME MORE</string>
+    <string name="dashboard_greeting_message">HI ! %1$s</string>
+    <string name="good_morning">Good Morning</string>
+    <string name="good_afternoon">Good Afternoon</string>
+    <string name="good_evening">Good Evening</string>
+    <string name="rain">Rainy</string>
+    <string name="few_cloudy">Few Cloudy</string>
+    <string name="scatter_cloudy">Scatter Cloudy</string>
+    <string name="broken_cloudy">Broken Cloudy</string>
+    <string name="mist">Mist</string>
+    <string name="snow">Snow</string>
+    <string name="sun">Sunny</string>
+    <string name="thunderstorm">Thunderstorm</string>
+    <string name="html_text" translatable="false"><![CDATA[<a href=\'google.com\'>Hello HTML TEXT</a>]]></string>
+    <string-array
+        name="feedback_rating_comments">
+        <item>@string/rating_1_comment</item>
+        <item>@string/rating_2_comment</item>
+        <item>@string/rating_3_comment</item>
+        <item>@string/rating_4_comment</item>
+        <item>@string/rating_5_comment</item>
+    </string-array>
+    <string-array
+        name="feedback_areas_of_improvement">
+        <item>@string/improvement_area_1</item>
+        <item>@string/improvement_area_2</item>
+        <item>@string/improvement_area_3</item>
+        <item>@string/improvement_area_4</item>
+        <item>@string/improvement_area_5</item>
+        <item>@string/improvement_area_6</item>
+    </string-array>
+</resources>

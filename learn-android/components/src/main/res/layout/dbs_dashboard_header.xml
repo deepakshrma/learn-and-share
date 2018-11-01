@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/header_view_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/header_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/dashboard_header_background_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+        <Button
+            android:id="@+id/dashboard_header_show_more"
+            style="@style/Capsule.White"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:text="@string/tell_me_more"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/dashboard_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/x_small_padding">
+
+                <ImageView
+                    android:id="@+id/dashboard_weather_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/dashboard_temperature"
+                    style="@style/DBSDashboardHeader.Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/x_small_margin"
+                    android:layout_marginStart="@dimen/x_small_margin"
+                    tools:text="22º" />
+
+                <TextView
+                    android:id="@+id/dashboard_weather_info"
+                    style="@style/DBSDashboardHeader.Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Rain" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dashboard_greeting_message"
+                style="@style/DBSDashboardHeader.HeaderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="HI! Good Morning" />
+
+            <TextView
+                android:id="@+id/dashboard_weather_message"
+                style="@style/DBSDashboardHeader.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Carry an umbrella..." />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.design.widget.AppBarLayout>

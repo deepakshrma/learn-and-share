@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="page_indicator_corner_radius">10dp</dimen>
+    <dimen name="page_indicator_offset">8dp</dimen>
+
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_indicator_margin_horizontal">10dp</dimen>
+    <dimen name="default_indicator_margin_vertical">25dp</dimen>
+
+    <dimen name="xx_small_margin">4dp</dimen>
+    <dimen name="x_small_margin">8dp</dimen>
+    <dimen name="small_margin">12dp</dimen>
+    <dimen name="medium_margin">16dp</dimen>
+    <dimen name="large_margin">24dp</dimen>
+    <dimen name="x_large_margin" tools:keep="@dimen/x_large_margin">32dp</dimen>
+
+    <dimen name="xx_small_padding">4dp</dimen>
+    <dimen name="x_small_padding">8dp</dimen>
+    <dimen name="small_padding">12dp</dimen>
+    <dimen name="medium_padding">16dp</dimen>
+    <dimen name="large_padding" tools:keep="@dimen/large_padding">24dp</dimen>
+    <dimen name="x_large_padding" tools:keep="@dimen/x_large_padding">32dp</dimen>
+
+    <dimen name="dialog_padding">20dp</dimen>
+
+    <bool name="default_circle_indicator_centered">true</bool>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <integer name="default_circle_indicator_orientation">0</integer>
+
+    <dimen name="ovalButtonCornerRadius">18dp</dimen>
+    <dimen name="ovalButtonHeight">30dp</dimen>
+    <dimen name="ovalButtonHeightLarge">40dp</dimen>
+
+    <dimen name="default_otp_pin_size">32sp</dimen>
+
+    <dimen name="expandable_card_corner_radius">4dp</dimen>
+    <dimen name="expandable_card_elevation">4dp</dimen>
+
+    <dimen name="recycler_menu_height">100dp</dimen>
+    <dimen name="recycler_menu_item_width">60dp</dimen>
+    <dimen name="recycler_menu_item_height">100dp</dimen>
+    <dimen name="recycler_menu_item_corner_radius">4dp</dimen>
+    <dimen name="recycler_menu_item_icon_width">58dp</dimen>
+    <dimen name="recycler_menu_item_icon_height">0dp</dimen>
+    <dimen name="dbs_label_prefix_padding">3dp</dimen>
+
+    <dimen name="dbslabel_title_textsize">14sp</dimen>
+    <dimen name="dbslabel_otherfields_textsize">16sp</dimen>
+    <dimen name="title_text_size">16sp</dimen>
+    <dimen name="content_text_size">14sp</dimen><!-- right now these names might look odd now but designers once they are done with design language we have to standardize these -->
+    <dimen name="dbs_source_acc_image_width">42dp</dimen>
+    <dimen name="dbs_source_acc_image_height">42dp</dimen>
+    <dimen name="dbs_down_arrow_width">16dp</dimen>
+    <dimen name="dbs_down_arrow_height">16dp</dimen>
+    <dimen name="dbs_right_nav_width">20dp</dimen>
+    <dimen name="dbs_right_nav_height">20dp</dimen>
+    <dimen name="dbs_account_info_list_animation_view_margin_start">27dp</dimen>
+    <dimen name="dbs_animation_image1_margin_top">3dp</dimen>
+    <dimen name="dbs_animation_image2_margin_top">15dp</dimen>
+    <dimen name="dbs_animation_image3_margin_top">25dp</dimen>
+    <dimen name="dbs_account_transfer_divider_margin_start">33dp</dimen>
+    <dimen name="dbs_account_transfer_divider_height">1dp</dimen>
+
+    <!-- Dimens for Rounded Corners -->
+    <dimen name="dbs_corner_radius_xsmall" tools:keep="@dimen/dbs_corner_radius_xsmall">2dp</dimen>
+    <dimen name="dbs_corner_radius_small">4dp</dimen>
+    <dimen name="dbs_corner_radius_medium" tools:keep="@dimen/dbs_corner_radius_medium">8dp</dimen>
+    <dimen name="dbs_corner_radius_large" tools:keep="@dimen/dbs_corner_radius_large">16dp</dimen>
+
+    <dimen name="dbs_custom_cursor_width">2dp</dimen>
+
+    <dimen name="plugin_height_large">200dp</dimen>
+    <dimen name="plugin_height_medium">150dp</dimen>
+    <dimen name="plugin_height_small">100dp</dimen>
+    <dimen name="plugin_card_elevation">4dp</dimen>
+    <dimen name="dbs_dashboard_header_with_image_top_margin_bottom">52dp</dimen>
+    <dimen name="dbs_dashboard_header_title_text_size">26sp</dimen>
+    <dimen name="dbs_header_title_with_cta_text_size">18sp</dimen>
+    <dimen name="badge_text_size">10sp</dimen>
+    <dimen name="min_badge_size">20dp</dimen>
+    <dimen name="DP_9">9dp</dimen>
+</resources>

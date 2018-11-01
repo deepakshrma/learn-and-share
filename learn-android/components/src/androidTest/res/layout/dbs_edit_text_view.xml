@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.dbs.ui.components.DBSEditTextView
+        android:id="@+id/phone_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:dbs_maxLength="10"
+        custom:dbs_editCountryPrefix="+91-"
+        custom:dbs_editFormat="$1-($2)($3)"
+        custom:dbs_inputType="phone"
+        custom:dbs_editPattern="(\\d{3})(\\d{3})(\\d{4})" />
+
+
+    <com.dbs.ui.components.DBSEditTextView
+        android:id="@+id/currency_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:dbs_editFormat="###,###.###"
+        custom:dbs_editCurrencySymbol="\u00A5"
+        custom:dbs_editCurrencySymbolPosition="right"
+        custom:dbs_inputType="currency"
+        />
+
+    <com.dbs.ui.components.DBSEditTextView
+        android:id="@+id/left_symbol_currency_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:dbs_editFormat="###,###.##"
+        custom:dbs_editCurrencySymbol="\u00A5"
+        custom:dbs_editCurrencySymbolPosition="left"
+        custom:dbs_inputType="currency"/>
+
+    <com.dbs.ui.components.DBSEditTextView
+        android:id="@+id/default_currency_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1234"
+        custom:dbs_editFormat="###,###.##"
+        custom:dbs_editCurrencySymbol="\u00A5"
+        custom:dbs_editCurrencySymbolPosition="left"
+        custom:dbs_inputType="currency"/>
+
+
+  <EditText
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="placeholder"/>
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/account_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/medium_padding"
+    android:minHeight="72dp"
+    android:weightSum="1">
+
+    <com.dbs.ui.components.DBSAvatarView
+        android:id="@+id/account_image"
+        android:layout_width="@dimen/dbs_source_acc_image_width"
+        android:layout_height="@dimen/dbs_source_acc_image_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/x_small_margin"
+        android:layout_marginEnd="@dimen/x_small_margin"
+        android:src="@drawable/dbs_default_account_avatar" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_weight="0.9"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/account_name"
+            style="@style/DBSTitleSingle.Primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_fund_source"
+            tools:text="Temp" />
+
+        <LinearLayout
+            android:id="@+id/account_description_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/currency_label"
+                style="@style/DBSAccountItemView.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/x_small_margin"
+                android:visibility="gone"
+                tools:text="SGD" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/account_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="50dp"
+                android:layout_marginEnd="@dimen/x_small_margin"
+                android:singleLine="true"
+                android:visibility="gone"
+                tools:text="temp balance" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/account_number"
+                style="@style/DBSAccountItemView.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:singleLine="true"
+                tools:text="temp number" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/right_nav_image"
+        android:layout_width="@dimen/dbs_right_nav_width"
+        android:layout_height="@dimen/dbs_right_nav_height"
+        android:layout_gravity="center_vertical|right"
+        android:padding="@dimen/xx_small_padding"
+        android:layout_weight="0.1"
+        android:visibility="gone"
+        android:src="@drawable/ic_chevron_right_arrow" />
+</LinearLayout>

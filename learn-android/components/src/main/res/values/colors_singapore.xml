@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="singapore_color_primary_text">#172633</color>
+    <color name="singapore_color_secondary_background">#303B44</color>
+    <color name="singapore_color_secondary_text">#454F57</color>
+    <color name="singapore_color_black_4">#59646D</color>
+    <color name="singapore_color_tertiary_text">#6F7981</color>
+    <color name="singapore_color_black_6">#858F96</color>
+    <color name="singapore_color_black_7">#9BA4AB</color>
+    <color name="singapore_color_black_8">#B0B9C0</color>
+    <color name="singapore_color_black_9">#C7CFD5</color>
+    <color name="singapore_color_divider">#DDE3E7</color>
+    <color name="singapore_color_app_background">#F5F7F9</color>
+    <color name="singapore_color_red_primary">#FF3333</color>
+    <color name="singapore_color_red_secondary">#CF2929</color>
+    <color name="singapore_color_green_positive">#259B24</color>
+    <color name="singapore_color_green_success">#13C998</color>
+
+    <color name="singapore_color_white">#FFFFFF</color>
+    <color name="singapore_color_primary">@color/singapore_color_red_primary</color>
+    <color name="singapore_color_primary_dark">#2E2E2E</color>
+    <color name="singapore_color_red_disabled">#64FF3333</color>
+
+    <color name="singapore_color_cursor">#4A90E2</color>
+
+    <color name="iwealth_color_primary">#CC9955</color>
+    <color name="iwealth_color_secondary">#A67D40</color>
+    <color name="iwealth_color_disabled">#64CC9955</color>
+
+    <color name="posb_color_primary">#0077CC</color>
+    <color name="posb_color_pressed">#0065A7</color>
+    <color name="posb_color_disabled">#640077CC</color>
+    <color name="posb_color_secondary">#FFAA22</color>
+</resources>

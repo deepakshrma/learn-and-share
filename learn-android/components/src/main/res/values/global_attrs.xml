@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Global Attributes-->
+    <!--Theme variables-->
+    <attr name="dbs_themeColorPrimary" format="reference" />
+    <attr name="dbs_themeColorPrimaryDark" format="reference" />
+    <attr name="dbs_themeColorAccent" format="reference" />
+
+    <attr name="dbs_themeAppBackground" format="reference" />
+    <attr name="dbs_themeAppBackgroundInverse" format="reference" />
+
+    <attr name="dbs_themePrimaryTextColor" format="reference" />
+    <attr name="dbs_themeSecondaryTextColor" format="reference" />
+    <attr name="dbs_themeTertiaryTextColor" format="reference" />
+    <attr name="dbs_themePrimaryTextColorInverse" format="reference" />
+    <attr name="dbs_themeSecondaryTextColorInverse" format="reference" />
+
+    <attr name="dbs_themePrimaryColorHighlight" format="reference" />
+    <attr name="dbs_themePrimaryColorDisabled" format="reference" />
+
+    <attr name="dbs_themeDividerColor" format="reference" />
+    <attr name="dbs_themeSuccessColor" format="reference" />
+    <attr name="dbs_themeWarningColor" format="reference" />
+    <attr name="dbs_themeFailColor" format="reference" />
+
+    <attr name="dbs_themePositiveColor" format="reference" />
+    <attr name="dbs_themeFootnoteColor" format="reference" />
+    <attr name="dbs_themeIconColor" format="reference" />
+    <attr name="dbs_themeNumeralTextColor" format="reference" />
+    <attr name="dbs_themeCursorColor" format="reference" />
+    <attr name="dbs_themeHighlightedToastBackgroundColor" format="reference" />
+
+    <!--Theme variables: End-->
+    <attr name="dbs_themeButtonStyle" format="reference" />
+    <attr name="dbs_themeCapsuleAccentOutlineStyle" format="reference" />
+    <attr name="dbs_themeCapsuleAccentFilledStyle" format="reference" />
+    <attr name="dbs_themeEditTextStyle" format="reference" />
+    <attr name="dbs_themeSmallTextStyle" format="reference" />
+    <attr name="dbs_themeMultiColorTextStyle" format="reference" />
+    <attr name="dbs_themeWindowTranslucentStatus" format="boolean" />
+
+    <!--Props Variables-->
+    <attr name="dbs_title" format="reference|string" />
+    <attr name="dbs_description" format="reference|string" />
+    <attr name="dbs_text" format="reference|string" />
+    <attr name="dbs_textColor" format="reference" />
+    <attr name="dbs_textSize" format="reference|dimension" />
+    <attr name="dbs_textError" format="reference|string" />
+    <attr name="dbs_textErrorColor" format="reference" />
+    <attr name="dbs_textErrorSize" format="reference|dimension" />
+    <attr name="dbs_textHighlightedColor" format="reference" />
+    <attr name="dbs_icon" format="reference" />
+    <attr name="dbs_iconSize" format="dimension|reference" />
+    <attr name="dbs_font" format="reference|string" />
+    <attr name="dbs_fontSize" format="dimension|reference" />
+    <attr name="dbs_src" format="reference" />
+    <attr name="dbs_rounded" format="boolean" />
+    <attr name="dbs_cornerRadius" format="dimension|reference" />
+    <attr name="dbs_border" format="dimension" />
+    <attr name="dbs_borderColor" format="color" />
+    <attr name="dbs_borderColorDisabled" format="color" />
+    <attr name="dbs_pressedColor" format="color" />
+    <attr name="dbs_disabledColor" format="color" />
+    <attr name="dbs_maxLength" format="integer"/>
+    <!--Props Variables: End-->
+
+
+    <!--Global Attributes: End-->
+</resources>

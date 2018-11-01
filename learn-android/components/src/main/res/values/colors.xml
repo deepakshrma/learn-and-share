@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- { Start: @deprecated, Use india_ || singapore_ instead } -->
+    <color name="in_ascent_light">#FF834278</color>
+
+    <color name="sg_primary">#FF3333</color>
+    <color name="sg_primary_dark">#d62219</color>
+    <color name="sg_ascent">#360540</color>
+
+    <!-- { End: @deprecated, Use india_ || singapore_ instead } -->
+
+    <!-- Global colors-->
+    <color name="auxiliary_solid_disabled">#C6C6C6</color>
+    <!--//TODO: May need to remove-->
+    <color name="dbs_badge_prime">#007bff</color>
+
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+
+    <color name="dbs_dialog_cancel">#BDBDBD</color>
+
+    <color name="default_dbslabeltitle_color">#999999</color>
+    <color name="default_dbslabel_color">#333333</color>
+    <color name="default_divider">#BDBDBD</color>
+
+    <color name="default_feedback_from_background">#f7f5f2</color>
+</resources>

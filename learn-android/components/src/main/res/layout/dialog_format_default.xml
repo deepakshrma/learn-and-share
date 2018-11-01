@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dialog_padding">
+
+    <ImageView
+        android:id="@+id/dialogImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_chevron_left_white_24dp"
+        />
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        style="@style/DBSHeader.H5.Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/xx_small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        tools:text="Title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/dialogDescription"
+            style="@style/DBSHeader.H6.Left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:layout_marginTop="@dimen/x_small_margin"
+            tools:text="this is sample description and this is sample description" />
+    </ScrollView>
+</LinearLayout>

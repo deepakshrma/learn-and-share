@@ -1,0 +1,11 @@
+<com.dbs.ui.components.DBSFeedbackFormView android:id="@+id/feedback_form"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    app:dbs_title="Custom title"
+    app:dbs_feedbackHint="Custom hint"
+    app:dbs_feedbackImprovementsTitle="Custom improvements title"
+    app:dbs_feedbackSubmitButtonText="Custom submit"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+</com.dbs.ui.components.DBSFeedbackFormView>

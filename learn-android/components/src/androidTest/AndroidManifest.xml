@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dbs.ui">
+    <application
+        android:allowBackup="true"
+        android:label="Components Tests App"
+        android:supportsRtl="true"
+        android:theme="@style/DBSBase.NoActionBar.India"
+        android:name="android.support.multidex.MultiDexApplication">
+        <activity android:name=".components.testRule.EmptyActivity" />
+        <activity android:name=".components.DBSRadioGroupTest$DBSRadioGroupTestActivity" />
+        <activity android:name=".components.DBSOTPEditTextTest$DBSOTPEditTextTestActivity"/>
+        <activity android:name=".components.DBSQRScannerFragmentTest$DBSQRScannerActivity"/>
+    </application>
+</manifest>

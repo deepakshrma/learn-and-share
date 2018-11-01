@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?dbs_themeAppBackgroundInverse"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+         />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/title"
+        style="@style/DBSHeader.H3"
+        android:textSize="@dimen/dbs_header_title_with_cta_text_size"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_below="@id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/cta"
+        style="@style/Capsule.Accent.IndiaFilled"
+        android:paddingEnd="@dimen/x_large_padding"
+        android:paddingStart="@dimen/x_large_padding"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x_large_margin" />
+</RelativeLayout>

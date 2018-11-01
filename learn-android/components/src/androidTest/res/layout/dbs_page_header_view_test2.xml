@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?dbs_themeAppBackground"
+    android:orientation="vertical">
+
+    <com.dbs.ui.widgets.DBSPageHeaderView
+        android:id="@+id/dbs_page_header_with_image_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:dbs_imagePosition="bottom"
+        custom:dbs_imageSrc="@drawable/rating_star_full"
+        custom:dbs_subTitle="testSubtitleWithImage"
+        custom:dbs_title="testTitleWithImage" />
+
+    <com.dbs.ui.widgets.DBSPageHeaderView
+        android:id="@+id/dbs_page_header_with_image_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:dbs_imagePosition="right"
+        custom:dbs_imageSrc="@drawable/round_corner_rectangle"
+        custom:dbs_subTitle="testSubtitleWithImage"
+        custom:dbs_title="testTitleWithImage" />
+
+    <com.dbs.ui.widgets.DBSPageHeaderView
+        android:id="@+id/dbs_page_header_with_cta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:dbs_cta="Yolo"
+        custom:dbs_imageSrc="@drawable/rating_star"
+        custom:dbs_title="testTitleWithCta" />
+
+    <com.dbs.ui.widgets.DBSPageHeaderView
+        android:id="@+id/dbs_page_header_with_subtitle_only"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:dbs_subTitle="testSubTitle" />
+</LinearLayout>

@@ -1,0 +1,132 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
+apply from: "$rootProject.projectDir/support-plugin.gradle"
+
+android {
+    compileSdkVersion appStudio.versions.compileSdk
+    buildToolsVersion appStudio.versions.buildTools
+    defaultConfig {
+        minSdkVersion appStudio.versions.minSdk
+        targetSdkVersion appStudio.versions.compileSdk
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // Disable testCoverageEnabled, aar is failing in SG app.
+            //Error: java.lang.ClassNotFoundException: Didn't find class "org.jacoco.agent.rt.
+            // testCoverageEnabled true;
+        }
+        debug {
+            debuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            testCoverageEnabled true
+        }
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        lintConfig file('lint.xml')
+        baseline file("lint-baseline.xml")
+        disable 'RequiredSize', 'PrivateResource', 'GradleCompatible', 'MissingTranslation'
+        ignoreWarnings true
+    }
+    testOptions {
+        animationsDisabled true
+
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+    packagingOptions {
+        exclude 'asm-license.txt'
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation appStudio.deps.support.v7
+    implementation appStudio.deps.support.constraintLayout
+    implementation appStudio.deps.support.design
+    implementation appStudio.deps.support.cardView
+    implementation appStudio.deps.support.emoji
+    implementation appStudio.deps.support.emojibundled
+
+
+    implementation appStudio.deps.picasso.core
+    implementation appStudio.deps.rxjava2.rxjava2Android
+    implementation appStudio.deps.rxjava2.rxjava2Java
+    implementation appStudio.deps.rxbinding.rxbinding
+    implementation appStudio.deps.rxbinding.rxbindingDesigns
+    implementation appStudio.deps.zxing.core
+    implementation(appStudio.deps.zxing.journeyapps) {
+        transitive = false
+    }
+
+    //groupie
+    implementation appStudio.deps.groupie.core
+    implementation appStudio.deps.groupie.databinding
+
+
+    androidTestImplementation appStudio.deps.junit
+    androidTestImplementation appStudio.deps.mockito.mockitoCore
+    androidTestImplementation appStudio.deps.dexmaker.dexmakerCore
+    androidTestImplementation appStudio.deps.dexmaker.dexmakerMockito
+
+    androidTestImplementation appStudio.deps.hamcrest
+    androidTestImplementation appStudio.deps.espresso.contrib
+    androidTestImplementation appStudio.deps.assertj
+    androidTestImplementation appStudio.deps.uiautomator.uiautomatorv18
+
+    androidTestImplementation(appStudio.deps.astl.runner) {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    androidTestImplementation(appStudio.deps.astl.rules) {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    androidTestImplementation(appStudio.deps.espresso.core) {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+
+    testImplementation appStudio.deps.junit
+    testImplementation appStudio.deps.mockito.mockitoCore
+    testImplementation appStudio.deps.robolectric
+}
+task packageAar(type: Copy) {
+    dependsOn 'assembleRelease'
+    def aarDir = "${buildDir}/outputs/aar"
+    from aarDir
+    include 'components-release.aar'
+    into aarDir
+    rename 'components-release.aar', "dbs-components-${appStudio.versions.componentVersion}.aar"
+}
+
+task sourceJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier "sources"
+}
+publishing {
+    publications {
+        components(MavenPublication) {
+            groupId 'com.dbs.components'
+            artifactId 'dbs-components'
+            version "${appStudio.versions.componentVersion}"
+            artifact(sourceJar)
+            artifact("$buildDir/outputs/aar/components-release.aar")
+        }
+    }
+}
+sourceSets {
+    main.java.srcDirs += 'src/main/java'
+}

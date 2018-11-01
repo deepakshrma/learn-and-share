@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.dbs.ui.widgets.DBSMultiColorTextView
+        android:id="@+id/multi_color_view_with_all_attributes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a multi color component"
+        custom:dbs_textColor="@color/green"
+        custom:dbs_textHighlightedColor="@color/red"
+        custom:dbs_mTextHighlightTextRanges="8-10" />
+
+    <com.dbs.ui.widgets.DBSMultiColorTextView
+        android:id="@+id/multi_color_view_without_highlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a multi color component"
+        custom:dbs_textColor="@color/green" />
+
+    <com.dbs.ui.widgets.DBSMultiColorTextView
+        android:id="@+id/multi_color_view_with_invalid_highlight_end_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a multi color component"
+        custom:dbs_textColor="@color/green"
+        custom:dbs_mTextHighlightTextRanges="25-35" />
+
+    <com.dbs.ui.widgets.DBSMultiColorTextView
+        android:id="@+id/multi_color_view_with_invalid_highlight_start_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a multi color component"
+        custom:dbs_textColor="@color/green"
+        custom:dbs_mTextHighlightTextRanges="35-45" />
+</LinearLayout>

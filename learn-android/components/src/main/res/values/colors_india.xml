@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="india_color_primary_text">#333333</color>
+    <color name="india_color_secondary_background">#FFB121</color>
+    <color name="india_color_secondary_text">#454F57</color>
+    <color name="india_color_black_4">#666666</color>
+    <color name="india_color_tertiary_text">#5FAAAD</color>
+    <color name="india_color_divider">#EAEAEA</color>
+    <color name="india_color_app_background">#F7F5F2</color>
+    <color name="india_color_red_primary">#ED2D23</color>
+    <color name="india_color_red_secondary">#C7261E</color>
+    <color name="india_color_green_success">#6A9B1E</color>
+
+    <color name="india_color_white">#FFFFFF</color>
+    <color name="india_color_primary">@color/india_color_secondary_background</color>
+    <color name="india_color_primary_dark">@color/india_color_secondary_background</color>
+</resources>

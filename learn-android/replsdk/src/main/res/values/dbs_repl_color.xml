@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="chat_list">#f3f3f3</color>
+    <color name="their_bubble">#fff</color>
+    <color name="my_bubble">#ed614e</color>
+    <color name="bubble_border">#3e3e3e</color>
+</resources>

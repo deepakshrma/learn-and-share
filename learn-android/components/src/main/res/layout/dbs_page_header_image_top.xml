@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?dbs_themeAppBackgroundInverse">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+             />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/title"
+            style="@style/DBSHeader.H3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/x_small_margin"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginEnd="@dimen/medium_margin"
+             />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/subtitle"
+            style="@style/DBSHeader.H5"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/x_large_margin"
+            android:layout_marginTop="@dimen/small_margin"
+             />
+
+        <View
+            android:layout_below="@id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dbs_dashboard_header_with_image_top_margin_bottom" />
+    </RelativeLayout>
+    <include layout="@layout/dbs_page_header_progress_bar" />
+</LinearLayout>

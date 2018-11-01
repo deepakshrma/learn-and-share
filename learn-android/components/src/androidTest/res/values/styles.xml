@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DBSLabel" parent="">
+        <item name="android:textColor">@color/sg_primary</item>
+    </style>
+    <style name="DBSToggleVIew" parent="">
+        <item name="android:textColor">@color/sg_ascent</item>
+    </style>
+
+    <style name="DBSOtpCustom">
+        <item name="dbs_otpEmptyPinColor">@color/sg_primary_dark</item>
+        <item name="dbs_otpFilledPinColor">@color/sg_primary</item>
+        <item name="dbs_otpNumberOfPins">10</item>
+        <item name="dbs_fontSize">20sp</item>
+    </style>
+    <style name="DBSSnackBarCustomStyle">
+        <item name="android:textColor">@color/red</item>
+    </style>
+    <style name="DBSSnackBarCustomStyleGreen">
+        <item name="android:textColor">@color/green</item>
+    </style>
+</resources>

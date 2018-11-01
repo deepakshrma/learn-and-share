@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?dbs_themePrimaryTextColorInverse"
+    android:orientation="horizontal"
+    android:padding="@dimen/small_padding"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/leftNavigationItem"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom"
+        android:padding="@dimen/x_small_padding"
+        app:srcCompat="@drawable/ic_menu_black_24dp" />
+
+    <com.dbs.ui.components.DBSEditTextView
+        android:id="@+id/messageEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center_vertical"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:padding="@dimen/medium_padding"
+        android:scrollbars="vertical"
+        android:textCursorDrawable="@null"
+        tools:text="help" />
+
+    <ImageView
+        android:id="@+id/rightNavigationItem"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:padding="@dimen/x_small_padding"
+        android:tint="?dbs_themePrimaryColorHighlight"
+        app:srcCompat="@drawable/ic_mic_btn" />
+</LinearLayout>

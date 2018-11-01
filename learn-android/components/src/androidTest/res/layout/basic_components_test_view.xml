@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.dbs.ui.components.DBSActionBar
+        android:id="@+id/basicActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+     <com.dbs.ui.components.DBSActionBar
+        android:id="@+id/actionBarWithIcon"
+        app:backIcon="@drawable/happy_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.dbs.ui.components.DBSActionBar
+        android:id="@+id/actionBarWithTitle"
+        app:title="custom title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/DBSHeader.H2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Typography" />
+    <TextView
+        style="@style/DBSHeader.H3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Headline h3" />
+
+    <TextView
+        style="@style/DBSHeader.H3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Headline h3" />
+
+    <TextView
+        style="@style/DBSHeader.H2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Headline h2" />
+
+    <TextView
+        style="@style/DBSHeader.H1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Headline h1" />
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/DBSButton"
+        android:text="Next" />
+    <Button
+        style="@style/DBSButton"
+        android:text="Submit" />
+    <TextView
+        style="@style/DBSHeader.H2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Components" />
+
+    <TextView
+        style="@style/DBSHeader.H6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DBSActionBar" />
+
+    <com.dbs.ui.components.DBSActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/DBSHeader.H6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simple currency text with DBSEditTextView" />
+
+    <Button
+        android:id="@+id/DBSRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/DBSButton"
+        android:textAllCaps="false"
+        android:text="DBSRadioGroup"
+        android:layout_gravity="center"/>
+    <TextView
+        style="@style/DBSHeader.H6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DBSMenusView" />
+    <com.dbs.ui.components.DBSMenusView
+        android:id="@+id/dbsMenusView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+    <TextView
+        style="@style/DBSHeader.H6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Badges" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <com.dbs.ui.components.DBSBadge
+            style="@style/DBSBadge.Primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Primary"
+            app:dbs_rounded="true"
+            app:dbs_cornerRadius="@dimen/dbs_corner_radius_large" />
+
+        <com.dbs.ui.components.DBSBadge
+            style="@style/DBSBadge.Secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Secondary"
+            app:dbs_rounded="true"
+            app:dbs_cornerRadius="@dimen/dbs_corner_radius_large" />
+
+        <com.dbs.ui.components.DBSBadge
+            style="@style/DBSBadge.Success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Success"
+            app:dbs_rounded="true"
+            app:dbs_cornerRadius="@dimen/dbs_corner_radius_large" />
+
+        <com.dbs.ui.components.DBSBadge
+            style="@style/DBSBadge.Danger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Danger" />
+
+        <com.dbs.ui.components.DBSBadge
+            style="@style/DBSBadge.Warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Warning" />
+
+        <com.dbs.ui.components.DBSBadge
+            style="@style/DBSBadge.Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Info" />
+
+        <com.dbs.ui.components.DBSBadge
+            style="@style/DBSBadge.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Light" />
+
+        <com.dbs.ui.components.DBSBadge
+            style="@style/DBSBadge.Dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dark" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/DBSHeader.H6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DBSPageHeaderView" />
+
+    <TextView
+        style="@style/DBSHeader.H6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DBSMultiColorTextView" />
+
+    <TextView
+        style="@style/DBSHeader.H6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="StackCard" />
+
+    <com.dbs.ui.components.DBSExpandableCard
+        android:id="@+id/expandable_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.dbs.ui.components.DBSExpandableCard
+        android:id="@+id/expandable_card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.dbs.ui.components.DBSExpandableCard
+        android:id="@+id/expandable_card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.dbs.ui.components.DBSExpandableCard
+        android:id="@+id/expandable_card3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/DBSButton"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/snackbarBtn"
+        style="@style/DBSButton"
+        android:text="Open Snackbar" />
+    <TextView
+        style="@style/DBSHeader.H2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Utilities" />
+
+    <TextView
+        style="@style/DBSHeader.H4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reactive Form" />
+
+    <TextView
+        style="@style/DBSHeader.H4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Basic Form" />
+
+    <EditText
+        android:id="@+id/usernameF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User name"/>
+    <EditText
+        android:id="@+id/passwordF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+
+    <Button
+        android:id="@+id/imperativeSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"/>
+
+    <TextView
+        style="@style/DBSHeader.H4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dialog" />
+    <Button
+        android:id="@+id/submit"
+        style="@style/DBSButton"
+        android:text="Open Dialog" />
+    <TextView
+        style="@style/DBSHeader.H2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Widgets" />
+    <TextView
+        style="@style/DBSHeader.H6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DBSCarouselView with image" />
+    <com.dbs.ui.widgets.carousel.DBSCarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:dbs_fillColor="#FFFFFFFF"
+        app:dbs_pageColor="#00000000"
+        app:dbs_radius="6dp"
+        app:dbs_slideInterval="2000"
+        app:dbs_strokeColor="#FF777777"
+        app:dbs_strokeWidth="1dp"/>
+    <TextView
+        style="@style/DBSHeader.H6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DBSCarouselView with overlapped view" />
+    <com.dbs.ui.widgets.carousel.DBSCarouselView
+        android:id="@+id/carouselViewOverlapped"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:dbs_fillColor="#FFFFFFFF"
+        app:dbs_pageColor="#00000000"
+        app:dbs_radius="6dp"
+        app:dbs_slideInterval="2000"
+        app:dbs_strokeColor="#FF777777"
+        app:dbs_strokeWidth="1dp"/>
+    <TextView
+        style="@style/DBSHeader.H6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DBSCarouselView with custom view" />
+
+    <com.dbs.ui.widgets.carousel.DBSCarouselView
+        android:id="@+id/carouselCustomView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:dbs_fillColor="#FFFFFFFF"
+        app:dbs_pageColor="#00000000"
+        app:dbs_radius="6dp"
+        app:dbs_slideInterval="2000"
+        app:dbs_strokeColor="#FF777777"
+        app:dbs_strokeWidth="1dp"/>
+</LinearLayout>

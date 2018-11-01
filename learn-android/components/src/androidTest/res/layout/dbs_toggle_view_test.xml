@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.dbs.ui.components.DBSToggleView
+        android:id="@+id/dbs_toggle_view_with_all_attributes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:dbs_description="description"
+        custom:dbs_toggleSwitchChecked="true"
+        custom:dbs_title="title" />
+
+    <com.dbs.ui.components.DBSToggleView
+        android:id="@+id/dbs_toggle_view_with_out_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:dbs_title="title"
+        custom:dbs_toggleSwitchChecked="true"/>
+
+    <com.dbs.ui.components.DBSToggleView
+        android:id="@+id/dbs_toggle_view_without_attributes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <com.dbs.ui.components.DBSToggleView
+        android:id="@+id/dbs_toggle_view_with_tint_attributes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:dbs_description="description"
+        custom:dbs_toggleSwitchChecked="true"
+        custom:dbs_title="title"
+        custom:dbs_toggleSwitchTrackTint="@color/red"
+        custom:dbs_toggleSwitchThumbTint="@color/green"/>
+
+</LinearLayout>

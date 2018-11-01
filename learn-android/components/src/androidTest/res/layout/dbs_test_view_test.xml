@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dbs="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.dbs.ui.components.DBSTextView
+        android:id="@+id/defaultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello test"
+        dbs:dbs_cornerRadius="4dp"/>
+    <com.dbs.ui.components.DBSTextView
+        android:id="@+id/textViewWithHtml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        dbs:dbs_textHtmlText="@string/html_text"/>
+</LinearLayout>

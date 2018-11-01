@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:background="?dbs_themeAppBackgroundInverse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@id/subtitle"
+            android:layout_marginEnd="@dimen/medium_margin"
+             />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/title"
+            style="@style/DBSHeader.H3.Left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/subtitle"
+            style="@style/DBSHeader.H5.Left"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/medium_margin"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/x_small_margin"
+            android:layout_toStartOf="@id/image"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/title"
+            />
+    </RelativeLayout>
+    <include layout="@layout/dbs_page_header_progress_bar" />
+</LinearLayout>

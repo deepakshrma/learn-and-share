@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <com.dbs.ui.components.dbsrating.DBSRatingBar
+        android:id="@+id/rating_bar_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:dbs_ratingMaxRating="3"
+        custom:dbs_rating="2"
+        custom:dbs_ratingSpacingInDp="25"
+        custom:dbs_ratingStarLengthInDp="30"
+        custom:dbs_src="@drawable/happy_image"
+        />
+</LinearLayout>

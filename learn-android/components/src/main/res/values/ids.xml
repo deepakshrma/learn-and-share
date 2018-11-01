@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="page_header_text" type="id"/>
+    <item name="page_indicator_text" type="id"/>
+    <item name="page_header_icon" type="id"/>
+    <item name="otp_pins_view" type="id"/>
+    <item type="id" name="dbs_popup_button_cancel" />
+    <item type="id" name="dbs_popup_button_done" />
+</resources>

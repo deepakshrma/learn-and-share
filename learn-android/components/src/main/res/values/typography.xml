@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        Style for primary header
+        Font Size: 24
+        Font Family: Roboto Medium
+        Character spacing: 0
+    -->
+    <style name="DBSHeadingPrimary" parent="Base.TextAppearance.AppCompat.Headline" tools:keep="@style/DBSHeadingPrimary">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0</item>
+    </style>
+
+    <!--
+        Style for secondary header
+        Font Size: 18
+        Font Family: Roboto Medium
+        Character spacing: 0.15
+    -->
+    <style name="DBSHeadingSecondary" parent="Base.TextAppearance.AppCompat.Medium" tools:keep="@style/DBSHeadingSecondary">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.15</item>
+    </style>
+
+    <!--
+        Base Style for nav bar
+        Font Size: 16
+        Font Family: Roboto Medium
+        Character spacing: 0.15
+    -->
+    <style name="DBSNavBar" parent="Base.TextAppearance.AppCompat.Subhead" tools:keep="@style/DBSNavBar">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.15</item>
+    </style>
+
+    <!--
+        Style for nav bar primary text
+        Font Size: 16
+        Font Family: Roboto Medium
+        Character spacing: 0.15
+    -->
+    <style name="DBSNavBar.Primary" tools:keep="@style/DBSNavBar_Primary" />
+
+    <!--
+        Style for nav bar secondary text
+        Font Size: 16
+        Font Family: Roboto Medium
+        Character spacing: 0.15
+    -->
+    <style name="DBSNavBar.Secondary" tools:keep="@style/DBSNavBar_Secondary" />
+
+    <!--
+        Style for nav bar tertiary text
+        Font Size: 16
+        Font Family: Roboto Medium
+        Character spacing: 0
+    -->
+    <style name="DBSNavBar.Tertiary" tools:keep="@style/DBSNavBar_Tertiary">
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0</item>
+    </style>
+
+    <!--
+        Style for navigation button text
+        Font Size: 16
+        Font Family: Roboto Medium
+        Character spacing: 0.1
+    -->
+    <style name="DBSNavigationButtonText" parent="Base.TextAppearance.AppCompat.Widget.Button" tools:keep="@style/DBSNavigationButtonText">
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.1</item>
+    </style>
+
+    <!--
+        Style for multi line text
+        Font Size: 16
+        Font Family: Roboto Medium
+        Character spacing: 0
+    -->
+    <style name="DBSTitleMulti" parent="Base.TextAppearance.AppCompat.Subhead" tools:keep="@style/DBSTitleMulti">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0</item>
+    </style>
+
+    <!--
+        Style for single line text
+        Font Size: 16
+        Font Family: Roboto Regular
+        Character spacing: 0.15
+    -->
+    <style name="DBSTitleSingle" parent="Base.TextAppearance.AppCompat.Subhead">
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.15</item>
+    </style>
+
+    <!--
+        Style for text in capsule button
+        Font Size: 14
+        Font Family: Roboto Medium
+        Character spacing: 0.1
+    -->
+    <style name="DBSNavigationCapsuleText" parent="Base.TextAppearance.AppCompat.Widget.Button" tools:keep="@style/DBSNavigationCapsuleText">
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.1</item>
+    </style>
+
+    <!--
+        Style for text on inverse(dark) background
+        Font Size: 14
+        Font Family: Roboto Medium
+        Character spacing: 0
+    -->
+    <style name="DBSLabelText.Inverse" tools:keep="@style/DBSLabelText_Inverse" />
+
+    <!--
+        Style for numeral text
+        Font Size: 14
+        Font Family: Roboto Medium
+        Character spacing: 0
+    -->
+    <style name="DBSNumeralText" parent="Base.TextAppearance.AppCompat.Body2" tools:keep="@style/DBSNumeralText">
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0</item>
+    </style>
+
+    <!--
+        Style for navigation text
+        Font Size: 14
+        Font Family: Roboto Medium
+        Character spacing: 0.1
+    -->
+    <style name="DBSButtonText" parent="Base.TextAppearance.AppCompat.Body2" tools:keep="@style/DBSButtonText">
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.1</item>
+    </style>
+
+    <!--
+        Style for text on primary(light) background
+        Font Size: 14
+        Font Family: Roboto Medium
+        Character spacing: 0
+    -->
+    <style name="DBSLabelText" parent="Base.TextAppearance.AppCompat.Body2" tools:keep="@style/DBSLabelText">
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0</item>
+    </style>
+
+    <!--
+        Style for small text
+        Font Size: 14
+        Font Family: Roboto Regular
+        Character spacing: 0
+    -->
+    <style name="DBSLabelSmall" parent="Base.TextAppearance.AppCompat.Body1" tools:keep="@style/DBSLabelSmall">
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0</item>
+    </style>
+
+    <!--
+        Style for list header text
+        Font Size: 12
+        Font Family: Roboto Bold
+        Character spacing: 0
+    -->
+    <style name="DBSListHeader" parent="Base.TextAppearance.AppCompat.Caption" tools:keep="@style/DBSListHeader">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0</item>
+    </style>
+
+    <!--
+        Style for numeral text
+        Font Size: 12
+        Font Family: Roboto Medium
+        Character spacing: 0.15
+    -->
+    <style name="DBSNumeralText.Small" parent="Base.TextAppearance.AppCompat.Caption" tools:keep="@style/DBSNumeralText_Small">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.15</item>
+    </style>
+
+    <!--
+        Style for small navigation text
+        Font Size: 12
+        Font Family: Roboto Medium
+        Character spacing: 0
+    -->
+    <style name="DBSNavigationText.Small" parent="Base.TextAppearance.AppCompat.Caption" tools:keep="@style/DBSNavigationText_Small">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0</item>
+    </style>
+
+    <!--
+        Style for xSmall text
+        Font Size: 12
+        Font Family: Roboto Regular
+        Character spacing: 0.2
+    -->
+    <style name="DBSLabelText.xSmall" parent="Base.TextAppearance.AppCompat.Caption" tools:keep="@style/DBSLabelText_xSmall">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0</item>
+    </style>
+
+    <!--
+        Base Style for tag text
+        Font Size: 11
+        Font Family: Roboto Medium
+        Character spacing: 0.2
+    -->
+    <style name="DBSTag" parent="Base.TextAppearance.AppCompat.Body2" tools:keep="@style/DBSTag">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.2</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <!--
+        Style for primary tag text
+        Font Size: 11
+        Font Family: Roboto Medium
+        Character spacing: 0.2
+    -->
+    <style name="DBSTag.Primary" tools:keep="@style/DBSTag_Primary" />
+
+    <!--
+        Style for secondary tag text
+        Font Size: 11
+        Font Family: Roboto Bold
+        Character spacing: 0.2
+    -->
+    <style name="DBSTag.Secondary" tools:keep="@style/DBSTag_Secondary">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <!--
+        Style for line height header
+        Font Size: 24sp
+        Line Space extra: 6
+        Font Family: Roboto Medium
+    -->
+    <style name="DBSLineHeightH1" parent="Base.TextAppearance.AppCompat.Headline" tools:keep="@style/DBSLineHeightH1">
+        <item name="android:lineSpacingExtra">6dp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <!--
+        Style for line height medium
+        Font Size: 16sp
+        Line Space extra: 6
+        Font Family: Roboto Regular
+    -->
+    <style name="DBSLineHeightMedium" parent="Base.TextAppearance.AppCompat.Subhead" tools:keep="@style/DBSLineHeightMedium">
+        <item name="android:lineSpacingExtra">6dp</item>
+    </style>
+
+    <!--
+        Style for line height regular
+        Font Size: 14sp
+        Line Space extra: 6
+        Font Family: Roboto Regular
+    -->
+    <style name="DBSLineHeightRegular" parent="Base.TextAppearance.AppCompat.Body1" tools:keep="@style/DBSLineHeightRegular">
+        <item name="android:lineSpacingExtra">6dp</item>
+    </style>
+
+    <!--
+        Style for line height small
+        Font Size: 12sp
+        Line Space extra: 6
+        Font Family: Roboto Regular
+    -->
+    <style name="DBSLineHeightSmall" parent="Base.TextAppearance.AppCompat.Caption" tools:keep="@style/DBSLineHeightSmall">
+        <item name="android:lineSpacingExtra">6dp</item>
+    </style>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.dbs.ui.components.DBSTimerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/count_down_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dbs_timerDuration="1"
+        app:dbs_timerInterval="1" />
+
+    <com.dbs.ui.components.DBSTimerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/count_down_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dbs_timerDuration="30"
+        app:dbs_timerInterval="1" />
+
+
+    <com.dbs.ui.components.DBSTimerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/count_down_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dbs_timerDuration="9"
+        app:dbs_timerInterval="4" />
+
+
+    <com.dbs.ui.components.DBSTimerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/count_up_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dbs_timerShouldIncrement="true"
+        app:dbs_timerDuration="1"
+        app:dbs_timerInterval="1" />
+
+    <com.dbs.ui.components.DBSTimerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/count_up_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dbs_timerShouldIncrement="true"
+        app:dbs_timerDuration="30"
+        app:dbs_timerInterval="1" />
+
+    <com.dbs.ui.components.DBSTimerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/count_up_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dbs_timerShouldIncrement="true"
+        app:dbs_timerDuration="10"
+        app:dbs_timerInterval="3" />
+
+
+</LinearLayout>

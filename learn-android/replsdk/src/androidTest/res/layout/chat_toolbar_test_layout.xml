@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.dbs.replsdk.ui.components.DBSChatToolbarView
+        android:id="@+id/test_toolbar_view"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.dbs.replsdk.ui.components.DBSChatToolbarView>
+</LinearLayout>

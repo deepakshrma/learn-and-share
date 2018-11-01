@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.dbs.ui.components.DBSLabel
+        android:id="@+id/dabs_label_with_all_attributes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:dbs_labelDescription="MyDescription"
+        custom:dbs_labelPrefix="MyPrefix"
+        custom:dbs_title="MyTitle"
+        custom:dbs_labelValue="MyLabel" />
+
+    <com.dbs.ui.components.DBSLabel
+        android:id="@+id/dbs_label_view_with_attributes_without_prefix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:dbs_title="MyTitle"
+        custom:dbs_labelValue="MyLabel" />
+
+    <com.dbs.ui.components.DBSLabel
+        android:id="@+id/dbs_label_view_with_attributes_without_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:dbs_labelPrefix="MyPrefix"
+        custom:dbs_title="MyTitle"
+        custom:dbs_labelValue="MyLabel" />
+
+    <com.dbs.ui.components.DBSLabel
+        android:id="@+id/dbs_label_view_without_attributes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

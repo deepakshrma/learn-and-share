@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/medium_margin">
+
+    <com.dbs.ui.components.DBSAccountInfoListItemView
+        android:id="@+id/source_account_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/medium_margin" />
+
+    <com.dbs.ui.components.DBSAccountInfoListItemView
+        android:id="@+id/destination_account_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/source_account_details"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/medium_margin" />
+
+    <FrameLayout
+        android:id="@+id/animationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dbs_account_info_list_animation_view_margin_start">
+
+        <ImageView
+            android:id="@+id/down_arrow1"
+            android:layout_width="@dimen/dbs_down_arrow_width"
+            android:layout_height="@dimen/dbs_down_arrow_width"
+            android:layout_marginTop="@dimen/dbs_animation_image1_margin_top"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_chevron_down_arrow"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/down_arrow2"
+            android:layout_width="@dimen/dbs_down_arrow_width"
+            android:layout_height="@dimen/dbs_down_arrow_width"
+            android:layout_marginTop="@dimen/dbs_animation_image2_margin_top"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_chevron_down_arrow"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/down_arrow3"
+            android:layout_width="@dimen/dbs_down_arrow_width"
+            android:layout_height="@dimen/dbs_down_arrow_height"
+            android:layout_marginTop="@dimen/dbs_animation_image3_margin_top"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_chevron_down_arrow"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dbs_account_transfer_divider_height"
+        android:layout_above="@id/destination_account_details"
+        android:layout_marginStart="@dimen/dbs_account_transfer_divider_margin_start"
+        android:layout_marginTop="@dimen/x_small_margin"
+        android:layout_toEndOf="@id/animationView"
+        android:background="@color/default_divider" />
+</RelativeLayout>

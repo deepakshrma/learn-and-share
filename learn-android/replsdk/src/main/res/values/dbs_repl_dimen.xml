@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dbs_dots_size_default">12dp</dimen>
+    <dimen name="dbs_dots_space_default">2dp</dimen>
+    <dimen name="dbs_jump_height_default">12dp</dimen>
+    <dimen name="dbs_rounded_corner_altenate_question">12dp</dimen>
+    <dimen name="dbs_rounded_corner_small">2dp</dimen>
+    <dimen name="dbs_rounded_corner_medium">4dp</dimen>
+    <dimen name="dbs_rounded_corner_full">16dp</dimen>
+    <dimen name="dbs_bubble_max_width">320dp</dimen>
+    <dimen name="dbs_button_list_item_width">270dp</dimen>
+    <dimen name="dbs_item_with_button_width">300dp</dimen>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Style for DBSButton -->
+    <style name="DBSButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">0dp</item>
+        <!--<item name="android:layout_margin">0dp</item>-->
+        <!-- Background is primary theme color -->
+        <item name="android:background">?dbs_themeColorAccent</item>
+        <!-- By default button will be caps -->
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">?dbs_themePrimaryTextColorInverse</item>
+        <item name="android:textAppearance">@style/DBSNavigationButtonText</item>
+        <item name="dbs_disabledColor">?dbs_themePrimaryColorDisabled</item>
+        <item name="dbs_pressedColor">?dbs_themePrimaryColorHighlight</item>
+        <item name="dbs_iconSize">@dimen/default_otp_pin_size</item>
+    </style>
+
+    <!-- Style for DBSButton with bold text -->
+    <style name="DBSButton.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for DBSButton with rounded corners -->
+    <style name="DBSButton.Rounded">
+        <item name="dbs_cornerRadius">@dimen/expandable_card_corner_radius</item>
+    </style>
+
+    <!-- Style for DBSButton with rounded corners and bold text -->
+    <style name="DBSButton.Rounded.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

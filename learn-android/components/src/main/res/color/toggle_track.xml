@@ -1,0 +1,11 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true"
+        android:color="#a7bf87" />
+    <!--
+        hardcoded color here coz this is common across all 4 teams and one of the colors
+        is not in palette not sure if these have to change when palette changes
+        confirmed with designer abhinav on this.
+    -->
+    <item android:state_checked="false"
+        android:color="#e5e5e5" />
+</selector>

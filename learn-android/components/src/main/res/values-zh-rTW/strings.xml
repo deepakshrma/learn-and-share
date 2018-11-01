@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="good_morning">早安。</string>
+    <string name="good_afternoon">午安。</string>
+    <string name="good_evening">晚安。</string>
+    <string name="rain">雨</string>
+    <string name="few_cloudy">晴</string>
+    <string name="scatter_cloudy">陰</string>
+    <string name="broken_cloudy">陰</string>
+    <string name="mist">霧</string>
+    <string name="snow">雪</string>
+    <string name="sun">晴</string>
+    <string name="thunderstorm">雷震</string>
+</resources>

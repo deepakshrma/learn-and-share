@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <com.dbs.ui.components.DBSBadge
+        style="@style/DBSBadge.Primary"
+        android:id="@+id/primaryBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:dbs_rounded="true"
+        custom:dbs_cornerRadius="@dimen/dbs_corner_radius_small"
+        android:text="Primary"/>
+
+    <com.dbs.ui.components.DBSBadge
+        style="@style/DBSBadge.Secondary"
+        android:id="@+id/secondaryBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:dbs_rounded="true"
+        custom:dbs_cornerRadius="@dimen/dbs_corner_radius_small"
+        android:text="Secondary"/>
+    <com.dbs.ui.components.DBSBadge
+        style="@style/DBSBadge"
+        android:id="@+id/withoutCustomAttr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WithoutCustomAttr"/>
+    <com.dbs.ui.components.DBSBadge
+        android:id="@+id/withoutStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WithoutStyle"/>
+</LinearLayout>

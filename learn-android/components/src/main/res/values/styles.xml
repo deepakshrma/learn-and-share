@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="DBSBase" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="dbs_themeColorPrimary">?colorPrimary</item>
+        <item name="dbs_themeColorPrimaryDark">?colorPrimaryDark</item>
+        <item name="dbs_themeColorAccent">?colorAccent</item>
+
+        <item name="dbs_themeAppBackground">?dbs_themeAppBackground</item>
+        <item name="dbs_themeAppBackgroundInverse">?dbs_themeAppBackgroundInverse</item>
+
+        <item name="dbs_themePrimaryTextColor">?dbs_themePrimaryTextColor</item>
+        <item name="dbs_themeSecondaryTextColor">?dbs_themeSecondaryTextColor</item>
+        <item name="dbs_themeTertiaryTextColor">?dbs_themeTertiaryTextColor</item>
+        <item name="dbs_themePrimaryTextColorInverse">?dbs_themePrimaryTextColorInverse</item>
+        <item name="dbs_themeSecondaryTextColorInverse">?dbs_themeSecondaryTextColorInverse</item>
+
+        <item name="dbs_themePrimaryColorHighlight">?dbs_themePrimaryColorHighlight</item>
+        <item name="dbs_themePrimaryColorDisabled">?dbs_themePrimaryColorDisabled</item>
+
+        <item name="dbs_themeDividerColor">?dbs_themeDividerColor</item>
+        <item name="dbs_themeSuccessColor">?dbs_themeSuccessColor</item>
+        <item name="dbs_themeWarningColor">?dbs_themeWarningColor</item>
+        <item name="dbs_themeFailColor">?dbs_themeFailColor</item>
+        <item name="dbs_themePositiveColor">?dbs_themePositiveColor</item>
+        <item name="dbs_themeFootnoteColor">?dbs_themeFootnoteColor</item>
+        <item name="dbs_themeIconColor">?dbs_themeIconColor</item>
+        <item name="dbs_themeNumeralTextColor">?dbs_themeNumeralTextColor</item>
+        <item name="dbs_themeCursorColor">?dbs_themeCursorColor</item>
+        <item name="dbs_themeHighlightedToastBackgroundColor">
+            ?dbs_themeHighlightedToastBackgroundColor
+        </item>
+
+        <item name="dbs_themeButtonStyle">@style/DBSButton</item>
+        <item name="dbs_themeCapsuleAccentOutlineStyle">?dbs_themeCapsuleAccentOutlineStyle</item>
+        <item name="dbs_themeCapsuleAccentFilledStyle">?dbs_themeCapsuleAccentFilledStyle</item>
+        <item name="dbs_themeEditTextStyle">?attr/dbs_themeEditTextStyle</item>
+        <item name="dbs_themeSmallTextStyle">@style/DBSLabelSmall.Primary</item>
+        <item name="dbs_themeMultiColorTextStyle">?attr/dbs_themeMultiColorTextStyle</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">
+            ?attr/dbs_themeWindowTranslucentStatus
+        </item>
+    </style>
+
+    <style name="DBSBase.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="dbs_themeWindowTranslucentStatus">false</item>
+    </style>
+
+    <style name="DBSBase.NoActionBar.Default" parent="DBSBase.NoActionBar.India">
+        <!--
+            ############    ##############
+            override theme attributes here
+            ############    ##############
+        -->
+    </style>
+
+    <style name="DBSBase.NoActionBar.India">
+        <item name="colorPrimary">@color/india_color_primary</item>
+        <item name="colorPrimaryDark">@color/india_color_primary_dark</item>
+        <item name="colorAccent">@color/india_color_red_primary</item>
+
+        <item name="colorControlNormal">@color/india_color_divider</item>
+        <item name="colorControlActivated">@color/india_color_divider</item>
+
+        <item name="dbs_themeAppBackground">@color/india_color_app_background</item>
+        <item name="dbs_themeAppBackgroundInverse">@color/india_color_secondary_background</item>
+
+        <item name="dbs_themePrimaryTextColor">@color/india_color_primary_text</item>
+        <item name="dbs_themeSecondaryTextColor">@color/india_color_secondary_text</item>
+        <item name="dbs_themeTertiaryTextColor">@color/india_color_tertiary_text</item>
+        <item name="dbs_themePrimaryTextColorInverse">@color/india_color_white</item>
+        <item name="dbs_themeSecondaryTextColorInverse">@color/india_color_secondary_text</item>
+
+        <item name="dbs_themePrimaryColorHighlight">@color/india_color_red_primary</item>
+        <item name="dbs_themePrimaryColorDisabled">@color/india_color_red_primary</item>
+
+        <item name="dbs_themeDividerColor">@color/india_color_divider</item>
+        <item name="dbs_themeSuccessColor">@color/india_color_green_success</item>
+        <item name="dbs_themeWarningColor">@color/india_color_red_primary</item>
+        <item name="dbs_themeFailColor">@color/india_color_red_primary</item>
+        <item name="dbs_themePositiveColor">@color/india_color_green_success</item>
+        <item name="dbs_themeFootnoteColor">@color/india_color_black_4</item>
+        <item name="dbs_themeIconColor">@color/india_color_black_4</item>
+        <item name="dbs_themeNumeralTextColor">@color/india_color_secondary_text</item>
+        <item name="dbs_themeCursorColor">@color/india_color_secondary_text</item>
+        <item name="dbs_themeHighlightedToastBackgroundColor">@color/india_color_black_4</item>
+
+        <item name="dbs_themeCapsuleAccentOutlineStyle">@style/Capsule.Accent.IndiaOutline</item>
+        <item name="dbs_themeCapsuleAccentFilledStyle">@style/Capsule.Accent.IndiaFilled</item>
+        <item name="dbs_themeEditTextStyle">@style/DBSEditText.India</item>
+        <item name="dbs_themeMultiColorTextStyle">@style/MultiColorTextStyle</item>
+    </style>
+
+    <style name="DBSBase.NoActionBar.Indonesia" parent="DBSBase.NoActionBar.India">
+        <!--
+        ############    ##############
+        override theme attributes here
+        ############    ##############
+        -->
+    </style>
+
+    <style name="DBSBase.NoActionBar.Singapore">
+        <item name="colorPrimary">@color/singapore_color_primary</item>
+        <item name="colorPrimaryDark">@color/singapore_color_primary_dark</item>
+        <item name="colorAccent">@color/singapore_color_red_primary</item>
+
+        <item name="colorControlNormal">@color/singapore_color_divider</item>
+        <item name="colorControlActivated">@color/singapore_color_divider</item>
+
+        <item name="dbs_themeAppBackground">@color/singapore_color_app_background</item>
+        <item name="dbs_themeAppBackgroundInverse">@color/singapore_color_secondary_background
+        </item>
+
+        <item name="dbs_themePrimaryTextColor">@color/singapore_color_primary_text</item>
+        <item name="dbs_themeSecondaryTextColor">@color/singapore_color_secondary_text</item>
+        <item name="dbs_themeTertiaryTextColor">@color/singapore_color_tertiary_text</item>
+        <item name="dbs_themePrimaryTextColorInverse">@color/singapore_color_white</item>
+        <item name="dbs_themeSecondaryTextColorInverse">@color/singapore_color_black_8</item>
+
+        <item name="dbs_themePrimaryColorHighlight">@color/singapore_color_red_secondary</item>
+        <item name="dbs_themePrimaryColorDisabled">@color/singapore_color_red_disabled</item>
+
+        <item name="dbs_themeDividerColor">@color/singapore_color_divider</item>
+        <item name="dbs_themeSuccessColor">@color/singapore_color_green_success</item>
+        <item name="dbs_themeWarningColor">@color/singapore_color_red_primary</item>
+        <item name="dbs_themeFailColor">@color/singapore_color_red_primary</item>
+        <item name="dbs_themePositiveColor">@color/singapore_color_green_positive</item>
+        <item name="dbs_themeFootnoteColor">@color/singapore_color_black_7</item>
+        <item name="dbs_themeIconColor">@color/singapore_color_tertiary_text</item>
+        <item name="dbs_themeNumeralTextColor">@color/singapore_color_black_6</item>
+        <item name="dbs_themeCursorColor">@color/singapore_color_cursor</item>
+        <item name="dbs_themeHighlightedToastBackgroundColor">@color/singapore_color_black_4</item>
+
+        <item name="dbs_themeMultiColorTextStyle">@style/MultiColorTextStyle</item>
+        <item name="dbs_themeCapsuleAccentOutlineStyle">@style/Capsule.Accent.SingaporeOutline
+        </item>
+        <item name="dbs_themeCapsuleAccentFilledStyle">@style/Capsule.Accent.SingaporeFilled</item>
+        <item name="dbs_themeEditTextStyle">@style/DBSEditText.Singapore</item>
+        <item name="dbs_themeWindowTranslucentStatus">true</item>
+    </style>
+
+    <style name="DBSBase.NoActionBar.Taiwan" parent="DBSBase.NoActionBar.Singapore" />
+
+    <style name="DBSBase.NoActionBar.IWealth" parent="DBSBase.NoActionBar.Singapore">
+        <item name="colorPrimary">@color/iwealth_color_primary</item>
+        <item name="colorAccent">@color/iwealth_color_primary</item>
+
+        <item name="dbs_themePrimaryColorHighlight">@color/iwealth_color_secondary</item>
+        <item name="dbs_themePrimaryColorDisabled">@color/iwealth_color_disabled</item>
+    </style>
+
+    <style name="DBSBase.NoActionBar.POSB" parent="DBSBase.NoActionBar.Singapore">
+        <item name="colorPrimary">@color/posb_color_primary</item>
+        <item name="colorAccent">@color/posb_color_secondary</item>
+        <item name="dbs_themeColorAccent">@color/posb_color_primary</item>
+
+        <item name="dbs_themePrimaryColorHighlight">@color/posb_color_pressed</item>
+        <item name="dbs_themePrimaryColorDisabled">@color/posb_color_disabled</item>
+    </style>
+
+    <!-- {@deprecated Use typography from typography.xml instead.} -->
+    <!-- Style for DBSHeader -->
+    <style name="DBSHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?dbs_themePrimaryTextColor</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <!-- {@deprecated Use typography from typography.xml instead.} -->
+    <!-- Style for DBSHeader with medium font -->
+    <style name="DBSHeader.H1">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <!-- {@deprecated Use typography from typography.xml instead.} -->
+    <!-- Style for DBSHeader with regular font -->
+    <style name="DBSHeader.H2">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <!-- {@deprecated Use typography from typography.xml instead.} -->
+    <style name="DBSHeader.H3">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!-- {@deprecated Use typography from typography.xml instead.} -->
+    <style name="DBSHeader.H4">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!-- {@deprecated Use typography from typography.xml instead.} -->
+    <style name="DBSHeader.H4.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- {@deprecated Use typography from typography.xml instead.} -->
+    <style name="DBSHeader.H5">
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <!-- {@deprecated Use typography from typography.xml instead.} -->
+    <style name="DBSHeader.H5.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- {@deprecated Use typography from typography.xml instead.} -->
+    <style name="DBSHeader.H6">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- {@deprecated Use typography from typography.xml instead.} -->
+    <style name="DBSHeader.H1.Left">
+        <item name="android:gravity">start</item>
+    </style>
+
+    <!-- {@deprecated Use typography from typography.xml instead.} -->
+    <style name="DBSHeader.H2.Left">
+        <item name="android:gravity">start</item>
+    </style>
+
+    <!-- {@deprecated Use typography from typography.xml instead.} -->
+    <style name="DBSHeader.H2.Left.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- {@deprecated Use typography from typography.xml instead.} -->
+    <style name="DBSHeader.H3.Left">
+        <item name="android:gravity">start</item>
+    </style>
+
+    <!-- {@deprecated Use typography from typography.xml instead.} -->
+    <style name="DBSHeader.H3.Left.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- {@deprecated Use typography from typography.xml instead.} -->
+    <style name="DBSHeader.H4.Left">
+        <item name="android:gravity">start</item>
+    </style>
+
+    <!-- {@deprecated Use typography from typography.xml instead.} -->
+    <style name="DBSHeader.H5.Left">
+        <item name="android:gravity">start</item>
+    </style>
+
+    <!-- {@deprecated Use typography from typography.xml instead.} -->
+    <style name="DBSHeader.H5.Left.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- {@deprecated Use typography from typography.xml instead.} -->
+    <style name="DBSHeader.H6.Left">
+        <item name="android:gravity">start</item>
+    </style>
+
+    <!-- {@deprecated Use typography from typography.xml instead.} -->
+    <!-- Style for DBSSubtitle with medium font and primary text color -->
+    <style name="DBSSubtitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">?dbs_themePrimaryTextColor</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <!-- {@deprecated Use typography from typography.xml instead.} -->
+    <style name="DBSSubtitle.S1">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- {@deprecated Use typography from typography.xml instead.} -->
+    <style name="DBSSubtitle.S2">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="DBSToolbar" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="android:textColor">?dbs_themePrimaryTextColor</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:layout_height">64dp</item>
+        <!-- TODO: Need update-->
+        <item name="android:background">?attr/colorAccent</item>
+        <item name="android:paddingBottom">@dimen/x_small_padding</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">@dimen/x_small_padding</item>
+    </style>
+
+    <style name="DBSToolbar_BackButton">
+        <item name="android:textColor">?dbs_themePrimaryTextColor</item>
+        <item name="android:tint">?attr/dbs_themePrimaryTextColorInverse</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="DBSToolbar_SearchBar">
+        <item name="android:textColor">?attr/dbs_themePrimaryTextColorInverse</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <!-- TODO: Need update-->
+        <item name="android:background">@color/in_ascent_light</item>
+
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+    </style>
+
+    <style name="DBSCounterOverFlow">
+        <item name="android:textColor">?dbs_themeWarningColor</item>
+    </style>
+
+    <!-- Style for DBSBadge -->
+    <style name="DBSBadge">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:padding">@dimen/xx_small_padding</item>
+        <item name="android:layout_marginLeft">@dimen/xx_small_margin</item>
+        <item name="android:layout_marginRight">@dimen/xx_small_margin</item>
+        <item name="android:textColor">?dbs_themePrimaryTextColorInverse</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for primary DBSBadge -->
+    <style name="DBSBadge.Primary">
+        <item name="android:background">@color/dbs_badge_prime</item>
+    </style>
+
+    <!-- Style for secondary DBSBadge -->
+    <style name="DBSBadge.Secondary">
+        <item name="android:background">?attr/colorPrimaryDark</item>
+    </style>
+
+    <!-- Style for success DBSBadge -->
+    <style name="DBSBadge.Success">
+        <item name="android:background">?dbs_themeSuccessColor</item>
+    </style>
+
+    <!-- Style for danger DBSBadge -->
+    <style name="DBSBadge.Danger">
+        <item name="android:background">?dbs_themeFailColor</item>
+    </style>
+
+    <!-- Style for warning DBSBadge -->
+    <style name="DBSBadge.Warning">
+        <item name="android:background">?dbs_themeWarningColor</item>
+    </style>
+
+    <!-- Style for info DBSBadge -->
+    <style name="DBSBadge.Info">
+        <item name="android:background">?dbs_themeTertiaryTextColor</item>
+    </style>
+
+    <style name="DBSBadge.Light">
+        <item name="android:background">@color/dbs_badge_prime</item>
+    </style>
+
+    <style name="DBSBadge.Dark">
+        <item name="android:background">?dbs_themeFootnoteColor</item>
+    </style>
+
+    <style name="DBSDialog.DBSButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/xx_small_padding</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">?attr/dbs_themePrimaryTextColorInverse</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+    <style name="DBSDialog.DBSButton.Horizontal" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+    <style name="Capsule">
+        <item name="android:layout_height">@dimen/ovalButtonHeight</item>
+        <item name="android:padding">@dimen/xx_small_padding</item>
+    </style>
+
+    <style name="Capsule.Accent">
+        <item name="android:textColor">?attr/colorAccent</item>
+    </style>
+
+    <style name="Capsule.Accent.IndiaOutline">
+        <item name="android:background">@drawable/capsule_accent_outline_background_india</item>
+    </style>
+
+    <style name="Capsule.Accent.SingaporeOutline">
+        <item name="android:background">@drawable/capsule_accent_outline_background_singapore</item>
+    </style>
+
+    <style name="Capsule.Accent.IndiaFilled">
+        <item name="android:textColor">?dbs_themePrimaryTextColorInverse</item>
+        <item name="android:background">@drawable/capsule_filled_background_india</item>
+    </style>
+
+    <style name="Capsule.Accent.SingaporeFilled">
+        <item name="android:textColor">?dbs_themePrimaryTextColorInverse</item>
+        <item name="android:background">@drawable/capsule_filled_background_india</item>
+    </style>
+
+    <style name="Capsule.White">
+        <item name="android:layout_height">@dimen/ovalButtonHeightLarge</item>
+        <item name="android:paddingTop">@dimen/x_small_padding</item>
+        <item name="android:paddingBottom">@dimen/x_small_padding</item>
+        <item name="android:paddingStart">@dimen/medium_padding</item>
+        <item name="android:paddingEnd">@dimen/medium_padding</item>
+        <item name="android:background">@drawable/capsule_white_outline_background</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="MultiColorTextStyle" parent="DBSHeader.H5.Left.Bold"></style>
+
+    <style name="DBSHorizontalScrollableMenus">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/recycler_menu_height</item>
+    </style>
+
+    <style name="DBSMenuItem">
+        <item name="android:layout_width">@dimen/recycler_menu_item_width</item>
+        <item name="android:layout_height">@dimen/recycler_menu_item_height</item>
+        <item name="cardCornerRadius">@dimen/recycler_menu_item_corner_radius</item>
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+    </style>
+
+    <style name="DBSMenuItemIcon">
+        <item name="android:layout_width">@dimen/recycler_menu_item_icon_width</item>
+        <item name="android:layout_height">@dimen/recycler_menu_item_icon_height</item>
+        <item name="android:padding">@dimen/xx_small_padding</item>
+    </style>
+
+    <style name="DBSMenuItemTitle" parent="DBSSubtitle.S2">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="DBSLabelTitle">
+        <item name="android:textSize">@dimen/dbslabel_title_textsize</item>
+        <item name="android:textColor">@color/default_dbslabeltitle_color</item>
+    </style>
+
+    <style name="DBSLabelOtherFields">
+        <item name="android:textSize">@dimen/dbslabel_otherfields_textsize</item>
+        <item name="android:layout_marginTop">@dimen/xx_small_margin</item>
+        <item name="android:textColor">@color/default_dbslabel_color</item>
+    </style>
+
+    <style name="DBSTextInputCardHint">
+        <item name="android:textColorHint">?dbs_themeSecondaryTextColor</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="DBSTextInputHint">
+        <item name="android:textColorHint">?dbs_themeSecondaryTextColor</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="DBSLabelText.xSmall.Failure">
+        <item name="android:textColor">?dbs_themeFailColor</item>
+    </style>
+
+    <style name="DBSTextInputLayout">
+        <item name="android:padding">@dimen/xx_small_padding</item>
+    </style>
+
+    <style name="DBSEditText" parent="DBSTitleSingle.Primary">
+        <item name="android:layout_marginRight">-4dp</item>
+    </style>
+
+    <style name="DBSEditText.India">
+        <item name="android:textCursorDrawable">@drawable/custom_cursor_india</item>
+    </style>
+
+    <style name="DBSEditText.Singapore">
+        <item name="android:textCursorDrawable">@drawable/custom_cursor_singapore</item>
+    </style>
+
+    <style name="DBSLabelSmall.Primary">
+        <item name="android:textColor">?dbs_themePrimaryTextColor</item>
+    </style>
+
+    <style name="DBSTextBase.ErrorContent" parent="">
+        <item name="android:textColor">?dbs_themeFailColor</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/content_text_size</item>
+    </style>
+
+    <style name="DBSDashboardHeader">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="DBSDashboardHeader.HeaderTitle">
+        <item name="android:textSize">@dimen/dbs_dashboard_header_title_text_size</item>
+    </style>
+
+    <style name="DBSDashboardHeader.Content">
+        <item name="android:textSize">@dimen/content_text_size</item>
+    </style>
+
+    <style name="DBSDashboardHeader.Title">
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+    <style name="DBSAccountItemView">
+
+    </style>
+
+    <style name="DBSAccountItemView.Label">
+        <item name="android:textColor">#9BA4AB</item> <!-- Need to fix-->
+    </style>
+
+    <style name="DBSTitleSingle.Primary">
+        <item name="android:textColor">?dbs_themePrimaryTextColor</item>
+    </style>
+    <style name="DBSProgressBar" tools:ignore="NewApi" parent="android:style/Widget.ProgressBar">
+        <item name="android:progressBackgroundTint" >?dbs_themePrimaryColorHighlight</item>
+        <item name="android:progressTint" >?dbs_themePrimaryColorDisabled</item>
+        <item name="android:max">100</item>
+    </style>
+    <style name="DBSProgressBar.Horizontal" tools:ignore="NewApi"  parent="android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressBackgroundTint" >?dbs_themePrimaryColorHighlight</item>
+        <item name="android:progressTint" >?dbs_themePrimaryColorDisabled</item>
+        <item name="android:progressDrawable" >@android:drawable/progress_horizontal</item>
+        <item name="android:background" >?dbs_themePrimaryColorHighlight</item>
+        <item name="android:max">100</item>
+        <item name="android:minHeight" >30dp</item>
+        <item name="android:minWidth" >200dp</item>
+    </style>
+</resources>

@@ -1,0 +1,118 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
+apply from: "$rootProject.projectDir/support-plugin.gradle"
+
+android {
+    compileSdkVersion appStudio.versions.compileSdk
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        minSdkVersion appStudio.versions.minSdk
+        targetSdkVersion appStudio.versions.compileSdk
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        debug {
+            multiDexEnabled true
+            testCoverageEnabled true
+            minifyEnabled false
+            debuggable true
+            multiDexKeepProguard file("$project.rootDir/tools/rules-proguard-debug.pro")
+        }
+    }
+
+    dataBinding {
+        enabled true
+    }
+
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets { main { res.srcDirs = ['src/main/res', 'src/test/res', 'src/androidTest/res/'] } }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    implementation(project(':components')) {
+//        exclude group: 'com.android.support'
+//        exclude group: 'io.reactivex.rxjava2', module: 'rxandroid'
+//    }
+
+    implementation("com.dbs.components:dbs-components:2.0.0-beta.3") {
+        exclude group: 'com.android.support'
+        exclude group: 'io.reactivex.rxjava2', module: 'rxandroid'
+    }
+    implementation appStudio.deps.support.v7
+    implementation appStudio.deps.support.constraintLayout
+    implementation appStudio.deps.support.design
+    implementation appStudio.deps.support.cardView
+    implementation appStudio.deps.support.emoji
+    implementation appStudio.deps.support.emojibundled
+
+    implementation appStudio.deps.gson
+    implementation appStudio.deps.rxjava2.rxjava2Java
+    implementation appStudio.deps.rxjava2.rxjava2Android
+
+    implementation appStudio.deps.retrofit.retrofit2
+    implementation appStudio.deps.retrofit.gson
+    implementation appStudio.deps.picasso.core
+
+    //groupie
+    implementation appStudio.deps.groupie.core
+    implementation appStudio.deps.groupie.databinding
+
+    implementation appStudio.deps.rxbinding.rxbinding
+    implementation appStudio.deps.rxbinding.rxbindingDesigns
+
+    implementation appStudio.deps.room.runtime
+    annotationProcessor appStudio.deps.room.processor
+    implementation appStudio.deps.lifecycle
+    implementation appStudio.deps.room.rx
+
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:customtabs:28.0.0'
+
+    testImplementation appStudio.deps.room.test
+    testImplementation appStudio.deps.archTest
+
+    testImplementation appStudio.deps.junit
+    testImplementation appStudio.deps.mockito.mockitoCore
+
+    androidTestImplementation appStudio.deps.astl.rules
+    androidTestImplementation(appStudio.deps.astl.runner) {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+
+    androidTestImplementation(appStudio.deps.espresso.core) {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    androidTestImplementation('com.android.support.test.espresso:espresso-contrib:3.0.2') {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+
+
+    androidTestImplementation appStudio.deps.mockito.mockitoCore, {
+        exclude group: "net.bytebuddy"
+    }
+//    androidTestImplementation "org.mockito:mockito-android:2.23.0", {
+//        exclude group: "net.bytebuddy"
+//    }
+
+    androidTestDebugImplementation "com.android.support:multidex:1.0.3"
+
+    androidTestImplementation 'com.linkedin.dexmaker:dexmaker-mockito:2.19.0', {
+        exclude group: "net.bytebuddy"
+    }
+}

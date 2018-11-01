@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <!-- Disable the given check in this project -->
+    <issue id="IconMissingDensityFolder" severity="ignore" />
+
+    <!-- Ignore the ObsoleteLayoutParam issue in the specified files -->
+    <issue id="ObsoleteLayoutParam" />
+
+    <!-- Ignore the UselessLeaf issue in the specified file -->
+    <issue id="UselessLeaf" />
+
+    <!-- Change the severity of hardcoded strings to "error" -->
+    <issue id="HardcodedText" severity="error" />
+    <issue id="IconMissingDensityFolder" severity="ignore">
+        <!-- Suppress lint warning on xxxhdpi, which "is necessary only to provide a launcher icon
+        that can appear larger than usual on an xxhdpi device. You do not need to provide xxxhdpi
+        assets for all your app's images." -->
+        <ignore path="src/debug/res/drawable-xxxhdpi" />
+    </issue>
+    <issue id="SetJavaScriptEnabled" severity="error" />
+    <issue id="TrulyRandom" severity="ignore" />
+    <issue id="PackageManagerGetSignatures" severity="ignore" />
+    <issue id="ParcelCreator" severity="error" />
+    <issue id="InvalidPackage" severity="ignore" />
+    <issue id="Typos" severity="ignore" />
+</lint>
